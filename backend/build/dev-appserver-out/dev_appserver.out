@@ -1,0 +1,24 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.appengine.tools.development.StreamHandlerFactory (file:/C:/Program%20Files%20(x86)/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/lib/impl/appengine-local-runtime.jar) to method java.net.URL.getURLStreamHandler(java.lang.String)
+WARNING: Please consider reporting this to the maintainers of com.google.appengine.tools.development.StreamHandlerFactory
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Aug 23, 2018 3:54:58 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\JithinJude\Desktop\Nanodegree\NANODEGREE_PROJECTS\BuildItBigger\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+2018-08-23 15:54:59.079:INFO::main: Logging initialized @625ms
+Aug 23, 2018 10:24:59 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (C:\Users\JithinJude\Desktop\Nanodegree\NANODEGREE_PROJECTS\BuildItBigger\backend) is not equal to your 
+web application root (C:\Users\JithinJude\Desktop\Nanodegree\NANODEGREE_PROJECTS\BuildItBigger\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+2018-08-23 15:54:59.576:INFO:oejs.Server:main: jetty-9.3.18.v20170406
+2018-08-23 15:55:03.688:INFO:oeja.AnnotationConfiguration:main: Scanning elapsed time=3342ms
+2018-08-23 15:55:03.999:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@2e029d61{/,file:///C:/Users/JithinJude/Desktop/Nanodegree/NANODEGREE_PROJECTS/BuildItBigger/backend/build/exploded-backend/,AVAILABLE}{C:\Users\JithinJude\Desktop\Nanodegree\NANODEGREE_PROJECTS\BuildItBigger\backend\build\exploded-backend}
+2018-08-23 15:55:04.022:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@743cb8e0{HTTP/1.1,[http/1.1]}{localhost:8080}
+2018-08-23 15:55:04.023:INFO:oejs.Server:main: Started @5568ms
+Aug 23, 2018 10:25:04 AM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance default is running at http://localhost:8080/
+Aug 23, 2018 10:25:04 AM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8080/_ah/admin
+Aug 23, 2018 3:55:04 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFO: Dev App Server is now running
