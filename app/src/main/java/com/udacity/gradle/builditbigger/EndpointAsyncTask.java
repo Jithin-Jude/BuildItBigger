@@ -18,6 +18,8 @@ import java.io.IOException;
 import static com.udacity.gradle.builditbigger.MainActivity.mProgressBar;
 
 public class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
+    String JOKE_KEY = "joke_key";
+
     private static MyApi myApiService = null;
     private Context context;
 
@@ -55,7 +57,7 @@ public class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
     @Override
     protected void onPostExecute(String result) {
         Intent intent = new Intent(context, DisplayJokeActivity.class);
-        intent.putExtra("JOKE_KEY",result);
+        intent.putExtra(JOKE_KEY,result);
         context.startActivity(intent);
         mProgressBar.setVisibility(View.GONE);
     }
