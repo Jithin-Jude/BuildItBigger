@@ -15,7 +15,7 @@ import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 
 import java.io.IOException;
 
-import static com.udacity.gradle.builditbigger.MainActivity.mProgressBar;
+import static com.udacity.gradle.builditbigger.MainActivity.mLVWifi;
 
 public class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
     String JOKE_KEY = "joke_key";
@@ -59,6 +59,6 @@ public class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
         Intent intent = new Intent(context, DisplayJokeActivity.class);
         intent.putExtra(JOKE_KEY,result);
         context.startActivity(intent);
-        mProgressBar.setVisibility(View.GONE);
+        mLVWifi.stopAnim();
     }
 }

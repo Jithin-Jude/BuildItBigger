@@ -1,16 +1,10 @@
 package com.udacity.gradle.builditbigger;
 
-import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.AndroidTestCase;
 import android.util.Log;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import static java.security.AccessController.getContext;
-import static junit.framework.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 @RunWith(AndroidJUnit4.class)
 public class EndPointAsyncTaskTest extends AndroidTestCase {

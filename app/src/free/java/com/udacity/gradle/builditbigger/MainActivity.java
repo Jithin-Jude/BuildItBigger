@@ -1,56 +1,30 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.inc.mountzoft.javajoker.Joker;
-import com.inc.mountzoft.jokefactory.DisplayJokeActivity;
+import com.ldoublem.loadingviewlib.view.LVWifi;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    static ProgressBar mProgressBar;
+    static LVWifi mLVWifi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mProgressBar = findViewById(R.id.progressBar);
-        mProgressBar.setVisibility(View.GONE);
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        mLVWifi = findViewById(R.id.lv_wifi);
+        mLVWifi.setViewColor(Color.rgb(255, 0, 0));
     }
 
     public void tellJoke(View view) {
-        mProgressBar.setVisibility(View.VISIBLE);
+        mLVWifi.startAnim();
+        Toast.makeText(getApplicationContext(),"Please wait!", Toast.LENGTH_LONG).show();
         new EndpointAsyncTask().execute(this);
     }
 
