@@ -1,6 +1,5 @@
 package com.udacity.gradle.builditbigger;
 
-import android.app.ActionBar;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;

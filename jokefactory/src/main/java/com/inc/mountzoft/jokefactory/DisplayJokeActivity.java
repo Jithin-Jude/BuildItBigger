@@ -55,7 +55,7 @@ public class DisplayJokeActivity extends AppCompatActivity {
         // Prepare the Interstitial Ad
         interstitial = new InterstitialAd(DisplayJokeActivity.this);
 // Insert the Ad Unit ID
-        interstitial.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        interstitial.setAdUnitId(getString(R.string.ad_unit_id));
 
         interstitial.loadAd(adRequest);
 // Prepare an Interstitial Ad Listener
@@ -66,13 +66,13 @@ public class DisplayJokeActivity extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(this,"Loading...",Toast.LENGTH_LONG).show();
+        Toast.makeText(this, R.string.loading,Toast.LENGTH_LONG).show();
 
-        final TextView textview = (TextView) findViewById(R.id.joke_text);
+        final TextView textview = findViewById(R.id.joke_text);
         textview.setMovementMethod(new ScrollingMovementMethod());
 
         final Intent intent = getIntent();
-        final String JokeResult = intent.getStringExtra(JOKE_KEY);;
+        final String JokeResult = intent.getStringExtra(JOKE_KEY);
 
         if (JokeResult != null) {
             textview.setText("");

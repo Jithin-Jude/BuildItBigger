@@ -2,4 +2,6 @@
     <string name="app_name">JokeFactory</string>
     <string name="joke_alt_text">Dig deeped, we gotta find the joke!</string>
     <string name="top_gradient">#0f004e</string>
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="loading">Loading...</string>
 </resources>
