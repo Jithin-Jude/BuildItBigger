@@ -1,6 +1,8 @@
 package com.inc.mountzoft.jokefactory;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,6 +24,10 @@ import com.bakerj.infinitecards.transformer.DefaultTransformerToFront;
 
 import ru.github.igla.ferriswheel.FerrisWheelView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 public class DisplayJokeActivity extends AppCompatActivity {
 
     String JOKE_KEY = "joke_key";
@@ -29,14 +35,37 @@ public class DisplayJokeActivity extends AppCompatActivity {
     private InfiniteCardView mCardView;
     private FerrisWheelView ferrisWheelView;
     private BaseAdapter mAdapter1, mAdapter2;
-    private int[] resId = {R.drawable.pic1, R.drawable.pic3, R.drawable.pic2,
-            R.drawable.pic4, R.drawable.pic5};
+    private int[] resId = {R.drawable.pic3, R.drawable.pic1, R.drawable.pic1,
+            R.drawable.pic4, R.drawable.pic2};
     private boolean mIsAdapter1 = true;
+
+    InterstitialAd mInterstitialAd;
+    private InterstitialAd interstitial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_joke);
+
+        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.string.top_gradient))));
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        // Prepare the Interstitial Ad
+        interstitial = new InterstitialAd(DisplayJokeActivity.this);
+// Insert the Ad Unit ID
+        interstitial.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+
+        interstitial.loadAd(adRequest);
+// Prepare an Interstitial Ad Listener
+        interstitial.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+// Call displayInterstitial() function
+                displayInterstitial();
+            }
+        });
+
         Toast.makeText(this,"Loading...",Toast.LENGTH_LONG).show();
 
         final TextView textview = (TextView) findViewById(R.id.joke_text);
@@ -88,6 +117,13 @@ public class DisplayJokeActivity extends AppCompatActivity {
             }
 
         }.start();
+    }
+
+    public void displayInterstitial() {
+// If Ads are loaded, show Interstitial else show nothing.
+        if (interstitial.isLoaded()) {
+            interstitial.show();
+        }
     }
 
     public void initButton() {

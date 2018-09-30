@@ -35,4 +35,5 @@ dependencies {
 
     implementation 'com.bakerj:infinite-cards:1.0.3'
     implementation 'ru.github.igla:ferriswheel:1.2'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
 }

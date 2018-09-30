@@ -1,6 +1,8 @@
 package com.udacity.gradle.builditbigger;
 
+import android.app.ActionBar;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -20,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         mLVWifi = findViewById(R.id.lv_wifi);
         mLVWifi.setViewColor(Color.rgb(255, 0, 0));
+
+        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.string.top_gradient))));
     }
 
     public void tellJoke(View view) {
