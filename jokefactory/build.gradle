@@ -22,6 +22,19 @@ android {
         }
     }
 
+    flavorDimensions "version"
+    productFlavors {
+        free {
+            dimension "version"
+            versionName "1.0­free"
+        }
+
+        paid {
+            dimension "version"
+            versionName "1.0­paid"
+        }
+    }
+
 }
 
 dependencies {

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke(View view) {
         mLVWifi.startAnim();
-        Toast.makeText(getApplicationContext(),"Please wait!", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),this.getString(com.udacity.gradle.builditbigger.R.string.please_wait), Toast.LENGTH_LONG).show();
         new EndpointAsyncTask().execute(this);
     }
 
