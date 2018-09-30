@@ -1,3 +1,11 @@
+# Nanodegree Build It Bigger Project :- Coding Memes
+
+![coding mems screenshots](https://user-images.githubusercontent.com/20029287/46254614-79684e80-c4af-11e8-8231-c9976a4c646b.jpg)
+
+# Code Review from Udacity
+
+![bib_udacity_review](https://user-images.githubusercontent.com/20029287/46254630-a4eb3900-c4af-11e8-881f-579e75ce6f7d.JPG)
+
 # Gradle for Android and Java Final Project
 
 In this project, you will create an app with multiple flavors that uses
