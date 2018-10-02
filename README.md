@@ -1,10 +1,10 @@
-# Nanodegree Build It Bigger Project :- Coding Memes
+[![Scholarship Google](https://img.shields.io/badge/scholarship-Google-brightgreen.svg)](https://in.udacity.com/google-india-scholarships)
+[![Udacity Nanodegree](https://img.shields.io/badge/Udacity-Nanodegree-blue.svg)](https://in.udacity.com/course/android-developer-nanodegree-by-google--nd801)
+[![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Jithin-Jude/Nanodegree_Build-It-Bigger-App/blob/master/LICENSE) 
 
-![coding mems screenshots](https://user-images.githubusercontent.com/20029287/46254614-79684e80-c4af-11e8-8231-c9976a4c646b.jpg)
+![banner](https://user-images.githubusercontent.com/20029287/46324719-881b4680-c612-11e8-92b6-5bb5882b2abd.jpg)
 
-# Code Review from Udacity
-
-![bib_udacity_review](https://user-images.githubusercontent.com/20029287/46254630-a4eb3900-c4af-11e8-881f-579e75ce6f7d.JPG)
+# Build It Bigger Project :- Coding Memes
 
 # Gradle for Android and Java Final Project
 
@@ -174,3 +174,36 @@ Once you have a functioning project, consider adding more features to test your 
 * Make the free app variant display interstitial ads between the main activity and the joke-displaying activity.
 * Have the app display a loading indicator while the joke is being fetched from the server.
 * Write a Gradle task that starts the GCE dev server, runs all the Android tests, and shuts down the dev server.
+
+## UI/UX
+![coding mems screenshots](https://user-images.githubusercontent.com/20029287/46254614-79684e80-c4af-11e8-8231-c9976a4c646b.jpg)
+
+## Udacity Review
+
+![bib_udacity_review](https://user-images.githubusercontent.com/20029287/46254630-a4eb3900-c4af-11e8-881f-579e75ce6f7d.JPG)
+
+## License
+```
+MIT License
+
+Copyright (c) 2018 Jithin K Jose
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+```
